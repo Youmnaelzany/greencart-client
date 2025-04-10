@@ -37,6 +37,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --color-new-primary: #4fbf8b;
+  --color-new-primary-dull: #44ae7c;
 }
 
 @theme inline {
@@ -120,4 +122,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@theme default {
+  --color-primary: var(--color-new-primary);
+  --color-primary-foreground: var(---color-new-primary-dull);
 }
